@@ -13,11 +13,11 @@ class TestLogin(unittest.TestCase):
     def test_a_failed_login_with_empty_username_and_password(self): 
         # steps
         browser = self.browser #buka web browser
-        browser.get("https://opensource-demo.orangehrmlive.com/") # buka situs
+        browser.get("https://opensource-demo.orangehrmlive.com/") #buka situs
         time.sleep(3)
-        browser.find_element(By.ID,"txtUsername").send_keys("") # isi username
+        browser.find_element(By.ID,"txtUsername").send_keys("") #isi username
         time.sleep(1)
-        browser.find_element(By.ID,"txtPassword").send_keys("") # isi password
+        browser.find_element(By.ID,"txtPassword").send_keys("") #isi password
         time.sleep(1)
         browser.find_element(By.ID,"btnLogin").click() # klik tombol log in
         time.sleep(3)
@@ -29,13 +29,13 @@ class TestLogin(unittest.TestCase):
     def test_b_failed_login_with_empty_password(self): 
         # steps
         browser = self.browser #buka web browser
-        browser.get("https://opensource-demo.orangehrmlive.com/") # buka situs
+        browser.get("https://opensource-demo.orangehrmlive.com/") #buka situs
         time.sleep(3)
-        browser.find_element(By.ID,"txtUsername").send_keys("Admin") # isi username
+        browser.find_element(By.ID,"txtUsername").send_keys("Admin") #isi username
         time.sleep(1)
-        browser.find_element(By.ID,"txtPassword").send_keys("") # isi password
+        browser.find_element(By.ID,"txtPassword").send_keys("") #isi password
         time.sleep(1)
-        browser.find_element(By.ID,"btnLogin").click() # klik tombol log in
+        browser.find_element(By.ID,"btnLogin").click() #klik tombol log in
         time.sleep(3)
 
         # validasi
@@ -45,13 +45,13 @@ class TestLogin(unittest.TestCase):
     def test_c_failed_login_with_wrong_username_and_password(self): 
         # steps
         browser = self.browser #buka web browser
-        browser.get("https://opensource-demo.orangehrmlive.com/") # buka situs
+        browser.get("https://opensource-demo.orangehrmlive.com/") #buka situs
         time.sleep(3)
-        browser.find_element(By.ID,"txtUsername").send_keys("Septiana") # isi username
+        browser.find_element(By.ID,"txtUsername").send_keys("Septiana") #isi username
         time.sleep(1)
-        browser.find_element(By.ID,"txtPassword").send_keys("septiana") # isi password
+        browser.find_element(By.ID,"txtPassword").send_keys("septiana") #isi password
         time.sleep(1)
-        browser.find_element(By.ID,"btnLogin").click() # klik tombol log in
+        browser.find_element(By.ID,"btnLogin").click() #klik tombol log in
         time.sleep(3)
 
         # validasi
@@ -61,13 +61,13 @@ class TestLogin(unittest.TestCase):
     def test_d_success_login(self): 
         # steps
         browser = self.browser #buka web browser
-        browser.get("https://opensource-demo.orangehrmlive.com/") # buka situs
+        browser.get("https://opensource-demo.orangehrmlive.com/") #buka situs
         time.sleep(3)
-        browser.find_element(By.ID,"txtUsername").send_keys("Admin") # isi username
+        browser.find_element(By.ID,"txtUsername").send_keys("Admin") #isi username
         time.sleep(1)
-        browser.find_element(By.ID,"txtPassword").send_keys("admin123") # isi password
+        browser.find_element(By.ID,"txtPassword").send_keys("admin123") #isi password
         time.sleep(1)
-        browser.find_element(By.ID,"btnLogin").click() # klik tombol log in
+        browser.find_element(By.ID,"btnLogin").click() #klik tombol log in
         time.sleep(3)
 
         # validasi
