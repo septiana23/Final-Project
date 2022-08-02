@@ -11,7 +11,7 @@ class TestPIM(unittest.TestCase):
 
     def test_search_employee(self): 
         browser = self.browser #buka web browser
-        browser.get("https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1") # buka situs
+        browser.get("https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList") # buka situs
         browser.maximize_window()
         time.sleep(3)
         browser.find_element(By.ID,"txtUsername").send_keys("Admin") # isi username
