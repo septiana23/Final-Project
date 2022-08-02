@@ -11,11 +11,11 @@ class TestTime(unittest.TestCase):
 
     def test_search_timesheets(self): 
         browser = self.browser #buka web browser
-        browser.get("https://opensource-demo.orangehrmlive.com/index.php/time/viewEmployeeTimesheet") # buka situs
+        browser.get("https://opensource-demo.orangehrmlive.com/index.php/time/viewEmployeeTimesheet") #buka situs
         browser.maximize_window()
         time.sleep(3)
-        browser.find_element(By.ID,"txtUsername").send_keys("Admin") # isi username
-        browser.find_element(By.ID,"txtPassword").send_keys("admin123") # isi password
+        browser.find_element(By.ID,"txtUsername").send_keys("Admin") #isi username
+        browser.find_element(By.ID,"txtPassword").send_keys("admin123") #isi password
         time.sleep(1)
         browser.find_element(By.ID,"btnLogin").click() # klik tombol log in
         time.sleep(3)
