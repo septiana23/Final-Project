@@ -20,7 +20,7 @@ class TestBuzz(unittest.TestCase):
         time.sleep(1)
         browser.find_element(By.ID,"btnLogin").click() # klik tombol log in
         time.sleep(3)
-        browser.find_element(By.ID,"createPost_content").send_keys("Hallo Apa Kabar") # add update status
+        browser.find_element(By.ID,"createPost_content").send_keys("Hallo Apa Kabar, Semuanya!") # add update status
         time.sleep(1)
         browser.find_element(By.ID,"postSubmitBtn").click()
         time.sleep(3)
