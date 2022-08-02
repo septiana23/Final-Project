@@ -9,7 +9,7 @@ class TestTime(unittest.TestCase):
     def setUp(self):    
         self.browser = webdriver.Chrome(ChromeDriverManager().install())
 
-    def test_search_timesheets(self): 
+    def test_search_employee_timesheets(self): 
         browser = self.browser #buka web browser
         browser.get("https://opensource-demo.orangehrmlive.com/index.php/time/viewEmployeeTimesheet") #buka situs
         browser.maximize_window()
