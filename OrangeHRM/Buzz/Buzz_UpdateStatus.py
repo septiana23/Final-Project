@@ -9,7 +9,7 @@ class TestBuzz(unittest.TestCase):
     def setUp(self):    
         self.browser = webdriver.Chrome(ChromeDriverManager().install())
 
-    def test_a_update_status(self): 
+    def test_update_status(self): 
         browser = self.browser #buka web browser
         browser.get("https://opensource-demo.orangehrmlive.com/index.php/buzz/viewBuzz") # buka situs
         browser.maximize_window()
