@@ -9,7 +9,7 @@ class TestPIM(unittest.TestCase):
     def setUp(self):    
         self.browser = webdriver.Chrome(ChromeDriverManager().install())
 
-    def test_a_search_employee(self): 
+    def test_search_employee(self): 
         browser = self.browser #buka web browser
         browser.get("https://opensource-demo.orangehrmlive.com/index.php/pim/viewEmployeeList/reset/1") # buka situs
         browser.maximize_window()
